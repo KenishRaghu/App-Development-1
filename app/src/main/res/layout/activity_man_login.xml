@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".ManLogin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_alignParentLeft="true">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log in"
+            android:textAllCaps="true"
+            android:textColor="#054570"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFCFC"
+            android:textSize="30sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:drawableLeft="@drawable/ic_action_email"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#F6F3F3"
+            android:textColorHighlight="#FFFFFF"
+            android:textColorLink="#FFFFFF"
+            app:met_floatingLabel="normal"></com.rengwuxian.materialedittext.MaterialEditText>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawableLeft="@drawable/ic_action_password"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:met_floatingLabel="normal"></com.rengwuxian.materialedittext.MaterialEditText>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="333dp"
+        android:layout_height="63dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="370dp"
+        android:background="@drawable/round"
+        android:onClick="login"
+        android:text="Login"
+        android:textColor="#fff">
+
+
+
+    </Button>
+
+    <TextView
+        android:id="@+id/for_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="false"
+        android:layout_marginEnd="128dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginBottom="256dp"
+        android:inputType="textPersonName"
+        android:text="Forgot Password?"
+        android:textColor="#FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="94dp"
+        android:layout_height="102dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="147dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="565dp"
+        app:srcCompat="@drawable/icon" />
+
+</RelativeLayout>
